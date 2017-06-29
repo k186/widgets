@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./common/js/jquery.js"></script>
+    <script src="http://front-plugin.wumart.com/dist/js/bootstrap.js"></script>
+    <script src="./src/KlotteryModal/Kmodal.js"></script>
+    <script src="./src/Klottery/Klottery.js"></script>
+    <script src="./src/kBootModal/kBootModal.js"></script>
+    <link rel="stylesheet" href="http://front-plugin.wumart.com/dist/css/bootstrap/bootstrap.min.css"/>
+</head>
+<body>
+<div id="app">
+
+</div>
+<div>
+    <button onclick="show()">show1</button>
+    <button onclick="fire()">抽奖</button>
+</div>
+</body>
+<script>
+    var modal = new Kmodal('app', {
+        /*资格查询*/
+        queryEvt: function (val) {
+            //异步查询资格接口
+            //other code
+            modal.setMsg({
+                canFire: true,//能否抽奖
+                userData: {//用户信息
+                    userName: '水电工',
+                    phone: '32432423',
+                    amount: '44',
+                    userNo: '432432fgdgfd'
+                },
+                error: { //错误信息
+                    main: '543',
+                    second: '43543'
+                }
+            })
+        },
+        /*抽奖*/
+        fireEvt: function () {
+            fire();
+        }
+    });
+
+    function show() {
+        modal.show();
+    }
+    function hide() {
+        modal.close();
+    }
+
+    var lottery = new Klottery('app', {
+        BoxWidth: 50,//单张图片宽度
+        BoxHeight: 50,//单张图片高度
+        CellCount: 4,//行
+        ColumnCount: 5,//列
+        margin: 2.5,//间隔
+        backgroundUrl: './common/img/100year-',//图片地址 图片名称数字索引以1开始
+        imgType: '.png',//图片类型
+        color: 'rgba(210, 255, 100, 0.77)',//激活背景色
+        callback: function () {//抽奖回调
+            lottery.showModal({//展示奖品
+                src: './common/img/100year-1.png'//配置获得的中奖项
+            });
+            //lottery.hideModal();//隐藏奖品弹窗
+        }
+    });
+
+    function fire() {
+        modal.close();
+        lottery.fire();
+    }
+</script>
+
+<script>
+    var str = '<div class="Kalert">' +
+        '    <div class="Kalert-title">税收政策变化</div>' +
+        '    <div class="Kalert-content">' +
+        '        <div class="Kalert-info">2017年起2017年起2017年起2017年起2017年起2017年起（<span class="Kalert-red">1321321</span>）</div>' +
+        '        <div class="Kalert-scroll">' +
+        '            <ul>' +
+        '                <li>卡号但是拉法基阿斯科利岁的风口浪尖斯大林 <span class="Kalert-red">32423</span>斯蒂芬森斯蒂芬都是第三方的手</li>' +
+        '                <li>卡号但是拉法基阿斯科利岁的风口浪尖斯大林 <span class="Kalert-red">32423</span>斯蒂芬森斯蒂芬都是第三方的手</li>' +
+        '            </ul>' +
+        '        </div>' +
+        '    </div>' +
+        '</div>';
+    ;
+    var a = new kBootModal('tesa', {
+        body: str
+    })
+
+</script>
+</html>

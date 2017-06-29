@@ -1,0 +1,64 @@
+.Klottery {
+  display: inline-flex;
+  flex-wrap: wrap; }
+  .Klottery * {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .Klottery-box {
+    position: relative; }
+    .Klottery-box.Klottery-active {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .Klottery-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #bbb8b8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; }
+  .Klottery-item.active {
+    box-shadow: inset 0 0 10000px 20px rgba(210, 255, 100, 0.77); }
+  .Klottery-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3); }
+  .Klottery-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; }
+  .Klottery-modal {
+    z-index: 2;
+    transform: translateY(20%); }
+  .Klottery-modalBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .Klottery-btn {
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+/*# sourceMappingURL=Ksnake.css.map */

@@ -1,0 +1,39 @@
+.Kalert {
+  padding: 0 30px; }
+  .Kalert-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px; }
+  .Kalert-info {
+    margin: 10px 0; }
+  .Kalert-red {
+    color: red; }
+  .Kalert-scroll {
+    height: 150px;
+    overflow-y: auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 10px; }
+    .Kalert-scroll > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13px; }
+    .Kalert-scroll > ul > li {
+      line-height: 1.5;
+      vertical-align: middle;
+      margin-left: 20px;
+      position: relative; }
+      .Kalert-scroll > ul > li:before {
+        display: inline-block;
+        content: '';
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: #48a7f2;
+        position: absolute;
+        left: -15px;
+        top: 5px; }
+
+/*# sourceMappingURL=Kalert.css.map */
