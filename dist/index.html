@@ -25,19 +25,22 @@
         queryEvt: function (val) {
             //异步查询资格接口
             //other code
-            modal.setMsg({
-                canFire: true,//能否抽奖
-                userData: {//用户信息
-                    userName: '水电工',
-                    phone: '32432423',
-                    amount: '44',
-                    userNo: '432432fgdgfd'
-                },
-                error: { //错误信息
-                    main: '543',
-                    second: '43543'
-                }
-            })
+            setTimeout(function () {
+                modal.setMsg({
+                    canFire: false,//能否抽奖
+                    userData: {//用户信息
+                        userName: '水电工',
+                        phone: '32432423',
+                        amount: '44',
+                        userNo: '432432fgdgfd'
+                    },
+                    error: { //错误信息
+                        main: '543',
+                        second: '43543'
+                    }
+                })
+            },3000)
+
         },
         /*抽奖*/
         fireEvt: function () {
