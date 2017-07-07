@@ -20,7 +20,8 @@
     background: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%; }
+    background-size: 100%;
+    transform-style: preserve-3d; }
   .Klottery-item.active {
     box-shadow: inset 0 0 10000px 20px rgba(210, 255, 100, 0.77); }
   .Klottery-mask {
@@ -35,8 +36,11 @@
     background-position: center;
     background-size: 100%; }
   .Klottery-modal {
+    text-align: center;
     z-index: 2;
-    transform: translateY(20%); }
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute; }
   .Klottery-modalBox {
     display: flex;
     justify-content: center;
@@ -45,16 +49,19 @@
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0; }
+    right: 0;
+    transition: all .45s ease;
+    opacity: 0; }
   .Klottery-btn {
     border-radius: 5px;
-    border: 2px solid white;
-    color: white;
+    color: #fff;
+    background: red;
     text-align: center;
-    font-size: 18px;
-    height: 40px;
-    line-height: 40px;
-    margin: 10px;
+    font-size: 40px;
+    height: 80px;
+    width: 640px;
+    line-height: 80px;
+    margin: 50px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
