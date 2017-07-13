@@ -150,6 +150,11 @@
             this.dom.find('.J_fire').on('click', function () {
                 _fn.fire.apply(that);
             });
+            this.dom.find('.J_input').bind('keydown', function (e) {
+                if (e.keyCode == "13") {
+                    _fn.query.apply(that, [that.dom.find('.J_query')]);
+                }
+            });
         },
         /* 动态设置Z-index */
         setIndex: function () {
