@@ -8,12 +8,15 @@
     <script src="./src/KlotteryModal/Kmodal.js"></script>
     <script src="./src/Klottery/Klottery.js"></script>
     <script src="./src/kBootModal/kBootModal.js"></script>
+    <script src="./src/nextPage/nextpage.js"></script>
     <link rel="stylesheet" href="http://front-plugin.wumart.com/dist/css/bootstrap/bootstrap.min.css"/>
 </head>
 <body>
 <div id="app">
 
 </div>
+
+<div id="page"></div>
 <div>
     <button onclick="show()">show1</button>
     <button onclick="fire()">抽奖</button>
@@ -79,6 +82,19 @@
         //var imgUrl;30.572269  104.066541
         lottery.fire();
     }
+    debugger
+    $('#page').NextPage({
+        pageSize: 30,
+        currentPage: 1,
+        totalCount: 1000,
+        //position: 'center',
+        select: [30, 60, 100],
+        callback: function (data) {
+            debugger
+        }
+    })
+
+
 </script>
 
 <script>
