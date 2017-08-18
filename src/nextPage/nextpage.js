@@ -19,7 +19,7 @@
         }
     ;
     var styleBox = document.createElement('style');
-    styleBox.innerHTML = '.nextpage{font-size:13px;height:40px;display:flex;flex-wrap:nowrap;justify-content:flex-end;align-items:center}.nextpage *{box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.nextpage.right{justify-content:flex-start}.nextpage.center{justify-content:center}.nextpage .nextpage-page{display:flex;flex-wrap:nowrap;align-items:center;margin:0 10px}.nextpage .nextpage-page:hover{cursor:pointer}.nextpage .nextpage-page .nextpage-btn{color:#666}.nextpage .nextpage-page .nextpage-btn:hover{text-decoration:none}.nextpage .nextpage-page .nextpage-btn.disabled{color:#ccc}.nextpage .nextpage-page .nextpage-btn.disabled:hover{cursor:not-allowed}.nextpage .nextpage-page .nextpage-pagelist{margin:0 10px;display:flex;flex-wrap:nowrap;list-style:none}.nextpage .nextpage-page .nextpage-pagelist>li{margin:0 5px;font-size:13px;font-weight:lighter;color:#666}.nextpage .nextpage-page .nextpage-pagelist>li:hover{color:rgba(96,93,212,.8)}.nextpage .nextpage-page .nextpage-pagelist>li.active{color:#605DD4}.nextpage .nextpage-control{display:flex;flex-wrap:nowrap;align-items:center}.nextpage .nextpage-control .nextpage-input{margin:0 10px;padding:5px;border-radius:4px;border:2px solid #f5f5f5;height:24px;width:60px;font-size:13px}.nextpage .nextpage-control .nextpage-select{position:relative;width:60px;height:24px;margin-right:30px}.nextpage .nextpage-control .nextpage-select-input{width:60px;height:24px;line-height:22px;padding:0 10px;position:absolute;border:2px solid #f5f5f5;border-radius:4px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAALFJREFUSA1jYBgFoyEwGgLDPARu3bo199GjR1LYvHn37l01oPxWbHLIYkzIHHT2////k75//37r9u3b9S9evOAGyQPZfECDu//8+XMFKO+Frgedz4gugMwHGnQMaIglVOwZExPTAiA/GYjFQWKMjIzH1dTUrJD1oLPxWgBSDHRxKNDADiBWgmkGGnwPiCtUVVVXw8QoooGGswEtKgT66A6QLgLxKTJwVPNoCIyGAHVDAAAMAFEdDMtzWQAAAABJRU5ErkJggg==);background-repeat:no-repeat;background-position-x:right;background-position-y:center}.nextpage .nextpage-control .nextpage-select-input:hover{cursor:pointer}.nextpage .nextpage-control .nextpage-select-input.active{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAKFJREFUSEtjGAWjYBQMIvD//3+227dvF966desOiAbxoVJ4ASOUxguABoYCDewAYiWoEAMjI+M9IK5QVVVdDRXCCghaAHTxMaDBliA20MCXQDz3379/CUCuFFTsuJqamhWIjQ0wQWmcAGr4b6BBPUCsBnRxNT8/vxoTE1MDUPwrzHKyAdAHW+/evasG5aKAR48eSQHl50K5o2AUjIJhChgYAJk8PzvIh+lJAAAAAElFTkSuQmCC)}.nextpage .nextpage-control .nextpage-select-chosen{margin:0;display:none;position:absolute;font-size:13px;width:80px;background:#fff;border:2px solid #f5f5f5;border-radius:4px;box-shadow:0 5px 30px rgba(0,0,0,.05);padding:3px}.nextpage .nextpage-control .nextpage-select-chosen.active{display:block}.nextpage .nextpage-control .nextpage-select-chosen.top{bottom:34px;top:auto}.nextpage .nextpage-control .nextpage-select-chosen.bottom{top:34px;bottom:auto}.nextpage .nextpage-control .nextpage-select-chosen>li{color:#999;height:28px;line-height:28px;padding:0 10px;border-radius:4px;margin:2px 0}.nextpage .nextpage-control .nextpage-select-chosen>li:hover{background:#f5f5f5;cursor:pointer}.nextpage .nextpage-control .nextpage-select-chosen>li.active{background:#f5f5f5}';
+    styleBox.innerHTML = '.nextpage{font-size:13px;height:40px;display:flex;flex-wrap:nowrap;justify-content:flex-end;align-items:center}.nextpage *{box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.nextpage.right{justify-content:flex-start}.nextpage.center{justify-content:center}.nextpage .nextpage-page{display:flex;flex-wrap:nowrap;align-items:center;margin:0 10px}.nextpage .nextpage-page:hover{cursor:pointer}.nextpage .nextpage-page .nextpage-btn{color:#666}.nextpage .nextpage-page .nextpage-btn:hover{text-decoration:none}.nextpage .nextpage-page .nextpage-btn.disabled{color:#ccc}.nextpage .nextpage-page .nextpage-btn.disabled:hover{cursor:not-allowed}.nextpage .nextpage-page .nextpage-pagelist{padding:0;margin:0 10px;display:flex;flex-wrap:nowrap;list-style:none}.nextpage .nextpage-page .nextpage-pagelist>li{margin:0 5px;font-size:13px;font-weight:lighter;color:#666}.nextpage .nextpage-page .nextpage-pagelist>li:hover{color:rgba(96,93,212,.8)}.nextpage .nextpage-page .nextpage-pagelist>li.active{color:#605DD4}.nextpage .nextpage-control{display:flex;flex-wrap:nowrap;align-items:center}.nextpage .nextpage-control .nextpage-input{margin:0 10px;padding:5px;border-radius:4px;border:2px solid #f5f5f5;height:24px;width:60px;font-size:13px}.nextpage .nextpage-control .nextpage-select{position:relative;width:60px;height:24px;margin-right:30px}.nextpage .nextpage-control .nextpage-select-input{width:60px;height:24px;line-height:22px;padding:0 10px;position:absolute;border:2px solid #f5f5f5;border-radius:4px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAALFJREFUSA1jYBgFoyEwGgLDPARu3bo199GjR1LYvHn37l01oPxWbHLIYkzIHHT2////k75//37r9u3b9S9evOAGyQPZfECDu//8+XMFKO+Frgedz4gugMwHGnQMaIglVOwZExPTAiA/GYjFQWKMjIzH1dTUrJD1oLPxWgBSDHRxKNDADiBWgmkGGnwPiCtUVVVXw8QoooGGswEtKgT66A6QLgLxKTJwVPNoCIyGAHVDAAAMAFEdDMtzWQAAAABJRU5ErkJggg==);background-repeat:no-repeat;background-position-x:right;background-position-y:center}.nextpage .nextpage-control .nextpage-select-input:hover{cursor:pointer}.nextpage .nextpage-control .nextpage-select-input.active{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAKFJREFUSEtjGAWjYBQMIvD//3+227dvF966desOiAbxoVJ4ASOUxguABoYCDewAYiWoEAMjI+M9IK5QVVVdDRXCCghaAHTxMaDBliA20MCXQDz3379/CUCuFFTsuJqamhWIjQ0wQWmcAGr4b6BBPUCsBnRxNT8/vxoTE1MDUPwrzHKyAdAHW+/evasG5aKAR48eSQHl50K5o2AUjIJhChgYAJk8PzvIh+lJAAAAAElFTkSuQmCC)}.nextpage .nextpage-control .nextpage-select-chosen{margin:0;display:none;position:absolute;font-size:13px;width:80px;background:#fff;border:2px solid #f5f5f5;border-radius:4px;box-shadow:0 5px 30px rgba(0,0,0,.05);padding:3px}.nextpage .nextpage-control .nextpage-select-chosen.active{display:block}.nextpage .nextpage-control .nextpage-select-chosen.top{bottom:34px;top:auto}.nextpage .nextpage-control .nextpage-select-chosen.bottom{top:34px;bottom:auto}.nextpage .nextpage-control .nextpage-select-chosen>li{color:#999;height:28px;line-height:28px;padding:0 10px;border-radius:4px;margin:2px 0}.nextpage .nextpage-control .nextpage-select-chosen>li:hover{background:#f5f5f5;cursor:pointer}.nextpage .nextpage-control .nextpage-select-chosen>li.active{background:#f5f5f5}';
     document.getElementsByTagName('head')[0].appendChild(styleBox);
     $.fn.NextPage = function (option) {
         var id = this.prop('id');
@@ -155,31 +155,45 @@
             var pages = '';
             var chosens = '';
             var i = 1;
-            for (i = this.spin.head; i < this.spin.end + 1; i++) {
+            if(totalPage>10){
+              for (i = this.spin.head; i < this.spin.end + 1; i++) {
                 if (this.opt.currentPage === i) {
-                    pages += '<li class="active" data-page="' + i + '">' + i + '</li>';
+                  pages += '<li class="active" data-page="' + i + '">' + i + '</li>';
                 } else {
-                    pages += '<li data-page="' + i + '">' + i + '</li>';
+                  pages += '<li data-page="' + i + '">' + i + '</li>';
                 }
-            }
-            if (this.opt.currentPage < this.opt.pageRange) {
+              }
+              debugger
+              if (this.opt.currentPage < this.opt.pageRange) {
                 pages += '<li>...</li>';
                 pages += '<li data-page="' + totalPage + '">' + totalPage + '</li>';
                 pageContainer.html('');
                 pageContainer.html(pages);
-            } else {
+              } else {
                 if (this.spin.end < totalPage) {
-                    pages = '<li data-page="1">1</li></li><li data-page="' + i + '">...</li>' + pages;
-                    pages += '<li>...</li>';
-                    pages += '<li data-page="' + totalPage + '">' + totalPage + '</li>';
-                    pageContainer.html('');
-                    pageContainer.html(pages);
+                  pages = '<li data-page="1">1</li></li><li data-page="' + i + '">...</li>' + pages;
+                  pages += '<li>...</li>';
+                  pages += '<li data-page="' + totalPage + '">' + totalPage + '</li>';
+                  pageContainer.html('');
+                  pageContainer.html(pages);
                 } else {
-                    pages = '<li data-page="1">1</li></li><li>...</li>' + pages;
-                    pageContainer.html('');
-                    pageContainer.html(pages)
+                  pages = '<li data-page="1">1</li></li><li>...</li>' + pages;
+                  pageContainer.html('');
+                  pageContainer.html(pages)
                 }
+              }
+            }else {
+              for (i = 1; i <= totalPage; i++) {
+                if (this.opt.currentPage === i) {
+                  pages += '<li class="active" data-page="' + i + '">' + i + '</li>';
+                } else {
+                  pages += '<li data-page="' + i + '">' + i + '</li>';
+                }
+              }
+              pageContainer.html('');
+              pageContainer.html(pages)
             }
+
 
             for (i = 0; i < this.opt.select.length; i++) {
                 if (this.opt.pageSize === this.opt.select[i]) {
@@ -236,6 +250,7 @@
             }
         },
         setCurrentPage: function (e) {
+          var totalPage = Math.ceil(this.opt.totalCount / this.opt.pageSize);
             var input = $(e.target);
             var value = input.val();
             if (!value) {
@@ -246,6 +261,9 @@
                 value = 1
             }
             if (e.keyCode === 13) {
+              if(value>totalPage){
+                value=totalPage
+              }
                 this.opt.currentPage = value;
                 _fn.updateSpin.apply(this);
                 _fn.render.apply(this, [true]);
